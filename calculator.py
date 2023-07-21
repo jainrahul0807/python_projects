@@ -2,7 +2,7 @@ import math
 import tkinter as tk
 from tkinter import messagebox
 
-# Calculator operations
+
 def add(a, b):
     return a + b
 
@@ -44,15 +44,15 @@ def calculate_expression(expression):
         expression = expression.replace(key, f" {key} ")
     return eval(expression)
 
-# Create GUI window
+
 window = tk.Tk()
 window.title("Calculator")
 
-# Calculator input entry
+
 input_entry = tk.Entry(window, font=("Arial", 18))
 input_entry.grid(row=0, column=0, columnspan=4, padx=10, pady=10)
 
-# Calculator buttons
+
 buttons = [
     '%', '/', '*', '-',
     '7', '8', '9','+',
